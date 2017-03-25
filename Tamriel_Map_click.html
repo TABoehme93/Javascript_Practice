@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<title>Temp Title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>//where most of the code is (^is to run jquery)
+    function cyrodiil_Click(){
+        document.getElementById("provinceDescription").innerHTML = "Home of the Imperials.";
+    }
+    function blackMarsh_Click(){
+        document.getElementById("provinceDescription").innerHTML = "Home of the Argonians.";
+    }
+    function morrowind_Click(){
+        document.getElementById("provinceDescription").innerHTML = "Home of the Dunmer.";
+    }
+    function skyrim_Click(){
+        document.getElementById("provinceDescription").innerHTML = "Home of the Nords.";
+    }
+    function highRock_Click(){
+        document.getElementById("provinceDescription").innerHTML = "Home of the Breton.";
+    }
+    function hammerfell_Click(){
+        document.getElementById("provinceDescription").innerHTML = "Home of the Redguard.";
+    }
+    function summersetIsles_Click(){
+        document.getElementById("provinceDescription").innerHTML = "Home of the Altmer.";
+    }
+    function valenwood_Click(){
+        document.getElementById("provinceDescription").innerHTML = "Home of the Bosmer.";
+    }
+    function elsweyr_Click(){
+        document.getElementById("provinceDescription").innerHTML = "Home of the Khajiit.";
+    }
+</script>
+</head>
+
+<style>
+    h1 {
+        text-align: center;
+    }
+</style>
+    
+<body><!-- test comment -->
+    <h1>Click on the map to learn more of the province.</h1>
+    <img src="Tamriel_map.gif" width="400" height="285" alt="map" usemap="#tamrielMap"> <!-- image source: http://elderscrolls.wikia.com/wiki/Map_of_Tamriel -->
+    <map name="tamrielMap">
+        <area shape="poly" coords="239,233, 265,233, 300,165, 260,95, 180,90, 110,160, 130, 180, 190,170, 240,190" alt="Cyrodiil" onclick="cyrodiil_Click()">
+        <area shape="poly" coords="275,277, 268,228, 303,166, 350,150, 352,253, 325,280" alt="BlackMarsh" onclick="blackMarsh_Click()">
+        <area shape="poly" coords="303,166, 250,33, 370,40, 390,90, 370,177" alt="Morrowind" onclick="morrowind_Click()">
+        <area shape="poly" coords="260,90, 170,85, 127,52, 140,6, 246,14" alt="Skyrim" onclick="skyrim_Click()">
+        <area shape="poly" coords="140,15, 130,50, 10,115, 52,13" alt="HighRock" onclick="highRock_Click()">
+        <area shape="poly" coords="127,53, 180,85, 115,160, 70,155, 30,130, 55,80" alt="Hammerfell" onclick="hammerfell_Click()">
+        <area shape="poly" coords="62,183, 3,207, 10,272, 75,270, 92,240, 85,190" alt="SummersetIsles" onclick="summersetIsles_Click()">
+        <area shape="poly" coords="197,257, 152,258, 104,231, 118,193, 175,166, 188,175, 175,217" alt="Valenwood" onclick="valenwood_Click()">
+        <area shape="poly" coords="245,271, 196,261, 176,213, 190,175, 283,190, " alt="Elsweyr" onclick="elsweyr_Click()">
+    </map>
+    
+    <textarea id="provinceDescription" rows="18" cols="75" disabled>Click a province of your choice.</textarea>
+</body>
+
+</html>
